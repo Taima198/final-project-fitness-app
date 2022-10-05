@@ -11,7 +11,8 @@ import { UserContext } from '../../App';
 import { useEffect } from 'react';
 
 function LoginForm(props) {
-
+    const [errorMessage13, setErrorMessage13] = React.useState("");
+    const [errorMessage14, setErrorMessage14] = React.useState("");
     console.log(" login page")
     const { userEmail, setUserEmail } = useContext(UserContext);
     const [state, setState] = useState({
@@ -50,9 +51,9 @@ function LoginForm(props) {
 
             response = await axios.post(`http://localhost:8080/client/login`, payload)
             console.log("response:")
-
             if (response.status == 200) {
                 console.log("login successfully:)")
+
                 // const { userEmail, setUserEmail } = useContext(UserContext);
                 // setUserEmail((prevState) => ({
                 //     userEmail: state.email
@@ -64,6 +65,7 @@ function LoginForm(props) {
                 redirectToHome();
             }
             else if (response.status == 400) {
+
                 console.log("you can't login...")
             }
         }
@@ -74,6 +76,7 @@ function LoginForm(props) {
                 console.log(error.response.data);
                 console.log(error.response.status);
                 console.log(error.response.headers);
+                setErrorMessage14(error.response.data)
             }
             // console.log("error::" + response.status)
         }
@@ -97,7 +100,9 @@ function LoginForm(props) {
         <div className="out-card">
             <div className="form-login-container">
                 <form>
+                    <p className="header-login-page">Login page</p>
                     <div className="feild">
+
                         <p className="login-para">Email address : </p>
                         <input type="email"
                             className="form-controll"
@@ -107,6 +112,9 @@ function LoginForm(props) {
                             value={state.email}
                             onChange={handleChange}
                         />
+                        <div className="positive-error">
+                            {errorMessage13 && <div className="error"> {errorMessage13} </div>}
+                        </div>
                     </div>
 
                     <div className="feild">
@@ -118,21 +126,25 @@ function LoginForm(props) {
                             value={state.password}
                             onChange={handleChange}
                         />
+
                     </div>
                     <div className="form-check">
                     </div>
+                    <div className="positive-error">
+                        {errorMessage14 && <div className="error"> {errorMessage14} </div>}
+                    </div>
                     <button
                         type="submit"
-                        className="btn btn-primary"
+                        className="bbtn"
                         onClick={handleSubmitClick}
                     >Submit</button>
                 </form>
 
-                <div className="alert alert-success mt-2" style={{ display: state.successMessage ? 'block' : 'none' }} role="alert">
+                <div className="btnn" style={{ display: state.successMessage ? 'block' : 'none' }} role="alert">
                     {state.successMessage}
                 </div>
                 <div className="registerMessage">
-                    <span>Dont have an account? </span>
+                    <span className="already-account-mgs">Dont have an account? </span>
                     <br></br>
                     <span className="loginText" onClick={() => redirectToRegister1()}>Register</span>
                 </div>

@@ -14,6 +14,7 @@ function ContactUs(props) {
 
     const { userEmail, setUserEmail } = useContext(UserContext);
     const [errorMessage, setErrorMessage] = React.useState("");
+    const [errorMessage1, setErrorMessage1] = React.useState("");
 
 
     const [state, setState] = useState({
@@ -36,11 +37,14 @@ function ContactUs(props) {
             "id": "",
             "message": state.message
         }
-        if (state.message === '') {
+        if (!state.message) {
             setErrorMessage("SORRY, we haven't get your message yet...")
+            setErrorMessage1("")
         }
-        else
-            setErrorMessage("Thanks for your feedback!")
+        else {
+            setErrorMessage("")
+            setErrorMessage1("Thanks for your feedback!")
+        }
         // const response = await axios.post(`http://localhost:5000/Clients/create_user`, payload)
         console.log('hey', JSON.stringify(payload))
         var response;
@@ -97,11 +101,14 @@ function ContactUs(props) {
                             <div className="feild2">
                                 {errorMessage && <div className="error"> {errorMessage} </div>}
                             </div>
+                            <div className="positive-error">
+                                {errorMessage1 && <div className="error"> {errorMessage1} </div>}
+                            </div>
                         </div>
                         <div className="feilda">
                             <button
                                 type="submit"
-                                className="btn btn-primary"
+                                className="bbtn"
                                 onClick={handleSubmitClick}
                             >Submit</button>
                         </div>

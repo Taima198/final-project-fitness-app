@@ -19,6 +19,11 @@
   margin-bottom: 1vh;
   text-align: left;
 }
+
+.feild:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 10px 1px #fefefe;
+}
 .feild2 {
   justify-content: center;
   font: bolder;
@@ -65,7 +70,9 @@ select {
   -webkit-box-shadow: inset 0px 0px 10px 1px #fefefe;
   box-shadow: inset 0px 0px 10px 1px #fefefe;
 }
-
+.select:hover {
+  box-shadow: inset 0px 0px 10px 1px #fefefe;
+}
 .quantity {
   text-align: center;
   background-color: transparent;

@@ -9,37 +9,21 @@ import { useEffect } from 'react';
 
 function RegistrationForm1(props) {
     const { userEmail, setUserEmail } = useContext(UserContext);
+    const [errorMessage15, setErrorMessage15] = React.useState("");
+    const [errorMessage16, setErrorMessage16] = React.useState("");
+    const [errorMessage17, setErrorMessage17] = React.useState("");
+    const [errorMessage18, setErrorMessage18] = React.useState("");
+    const [errorMessage19, setErrorMessage19] = React.useState("");
+    const [errorMessage20, setErrorMessage20] = React.useState("");
+    const [errorMessage21, setErrorMessage21] = React.useState("");
+    const [errorMessage22, setErrorMessage22] = React.useState("");
+    const [errorMessage23, setErrorMessage23] = React.useState("");
+    const [errorMessage25, setErrorMessage25] = React.useState("");
+    const [errorMessage24, setErrorMessage24] = React.useState("");
 
     const [errorMessage, setErrorMessage] = React.useState("");
     const [errorMessage2, setErrorMessage2] = React.useState("");
     useEffect(() => {
-        // // ...
-        // try {
-        //     const payload = {
-        //         "date": "12.12.12",
-        //         "email": userEmail
-        //     }
-
-        //     const response = await axios.post(`http://localhost:8080/client/get-suggestions`, payload)
-
-        //     if (response.status == 200) {
-        //         console.log("reponse data", response.data)
-        //         // setUserEmail(state.email)
-        //     }
-        //     else if (response.status == 400) {
-        //         console.log("you can't login...")
-        //     }
-        // }
-        // catch (error) {
-        //     // console.log("error::" + error.response.data.error)
-
-        //     if (error.response) {
-        //         console.log(error.response.data);
-        //         console.log(error.response.status);
-        //         console.log(error.response.headers);
-        //     }
-        //     // console.log("error::" + response.status)
-        // }
         console.log("user email ::" + userEmail)
     }, [userEmail]);
     const genderOptions = [
@@ -132,7 +116,28 @@ function RegistrationForm1(props) {
             "potasium": state.potasium,
             "magnisum": state.magnisum
         }
-
+        if (!state.userName)
+            setErrorMessage15("Missing user name...")
+        if (!state.email)
+            setErrorMessage16("Missing email address...")
+        if (!state.password)
+            setErrorMessage17("Missing password name...")
+        if (state.password != state.confirmPassword)
+            setErrorMessage18("Passwords don't match...")
+        if (!state.fitnessGoal)
+            setErrorMessage19("Missing fitness goal...")
+        if (!state.fitnessLevel)
+            setErrorMessage20("Missing fitness level...")
+        if (!state.birthdayDate)
+            setErrorMessage21("Missing birthday date...")
+        if (!state.trainingFrequency)
+            setErrorMessage22("Missing training frequency...")
+        if (!state.gender)
+            setErrorMessage23("Missing gender...")
+        if (!state.height)
+            setErrorMessage24("Missing height...")
+        if (!state.weight)
+            setErrorMessage25("Missing weight...")
         // if (!isValidPass(state.password)) {
         //     setErrorMessage("Weak password!, password must contain: 8 characters length,2 letters in Upper Case,1 Special Character (!@#$&*),2 numerals (0-9),3 letters in Lower Case")
         // }
@@ -161,6 +166,7 @@ function RegistrationForm1(props) {
                 console.log(error.response.data);
                 console.log(error.response.status);
                 console.log(error.response.headers);
+
             }
             // console.log("error::" + response.status)
         }
@@ -217,6 +223,9 @@ function RegistrationForm1(props) {
                         value={state.userName}
                         onChange={handleChange}
                     />
+                    <div className="feild2">
+                        {errorMessage15 && <div className="error"> {errorMessage15} </div>}
+                    </div>
                 </div>
 
                 <div className="feild">
@@ -229,10 +238,11 @@ function RegistrationForm1(props) {
                         value={state.email}
                         onChange={handleChange}
                     />
+                    <div className="feild2">
+                        {errorMessage16 && <div className="error"> {errorMessage16} </div>}
+                    </div>
                 </div>
-                <div className="feild2">
-                    {errorMessage2 && <div className="error"> {errorMessage2} </div>}
-                </div>
+
 
                 <div className="feild">
                     <p className="para">Create password :</p>
@@ -243,6 +253,9 @@ function RegistrationForm1(props) {
                         value={state.password}
                         onChange={handleChange}
                     />
+                    <div className="feild2">
+                        {errorMessage17 && <div className="error"> {errorMessage17} </div>}
+                    </div>
                 </div>
                 <div className="feild">
                     <p className="para">Confirm password :</p>
@@ -253,9 +266,9 @@ function RegistrationForm1(props) {
                         value={state.confirmPassword}
                         onChange={handleChange}
                     />
-                </div>
-                <div className="feild2">
-                    {errorMessage && <div className="error"> {errorMessage} </div>}
+                    <div className="feild2">
+                        {errorMessage18 && <div className="error"> {errorMessage18} </div>}
+                    </div>
                 </div>
                 <div className="feild">
                     <p className="para">Select your gender :</p>
@@ -267,7 +280,9 @@ function RegistrationForm1(props) {
                         ))}
 
                     </select>
-
+                    <div className="feild2">
+                        {errorMessage23 && <div className="error"> {errorMessage23} </div>}
+                    </div>
                 </div>
                 <div className="feild">
                     <p className="para">Set your birthday date :</p>
@@ -278,6 +293,9 @@ function RegistrationForm1(props) {
                         value={state.birthdayDate}
                         onChange={handleChange}
                     />
+                    <div className="feild2">
+                        {errorMessage21 && <div className="error"> {errorMessage21} </div>}
+                    </div>
                 </div>
                 <div className="feild">
                     <p className="para">What's your height ? (cm)</p>
@@ -289,6 +307,9 @@ function RegistrationForm1(props) {
                         value={state.height}
                         onChange={handleChange}
                     />
+                    <div className="feild2">
+                        {errorMessage24 && <div className="error"> {errorMessage24} </div>}
+                    </div>
                 </div>
                 <div className="feild">
                     <p className="para">What's your weight ? (kg)</p>
@@ -300,6 +321,9 @@ function RegistrationForm1(props) {
                         value={state.weight}
                         onChange={handleChange}
                     />
+                    <div className="feild2">
+                        {errorMessage25 && <div className="error"> {errorMessage25} </div>}
+                    </div>
                 </div>
                 <div className="feild">
                     <p className="para">What's your fitness level ? </p>
@@ -312,6 +336,9 @@ function RegistrationForm1(props) {
 
 
                     </select>
+                    <div className="feild2">
+                        {errorMessage20 && <div className="error"> {errorMessage20} </div>}
+                    </div>
                 </div>
 
                 <div className="feild">
@@ -323,11 +350,16 @@ function RegistrationForm1(props) {
                             </option>
                         ))}
                     </select>
+                    <div className="feild2">
+                        {errorMessage19 && <div className="error"> {errorMessage19} </div>}
+                    </div>
                 </div>
                 <div className="feild">
                     <p className="para">What's your training days per week ? </p>
                     <input type="number" value={state.trainingFrequency} onChange={handleChange} id="trainingFrequency" className="quantity" min="1" max="7" />
-
+                    <div className="feild2">
+                        {errorMessage22 && <div className="error"> {errorMessage22} </div>}
+                    </div>
                 </div>
                 <div className="feild">
                     <p className="para">Deficincies: </p>
@@ -353,7 +385,7 @@ function RegistrationForm1(props) {
                 <div className="feild3">
                     <button
                         type="submit"
-                        className="btn btn-primary"
+                        className="bbtn"
                         onClick={handleSubmitClick}
                     >
                         Submit

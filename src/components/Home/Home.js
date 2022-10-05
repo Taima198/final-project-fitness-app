@@ -212,7 +212,7 @@ function Home(props) {
 
             if (response.status == 200) {
                 console.log("client info sent to server:)" + response.status);
-                setErrorMessage8("Info already submitted succesfully!")
+                setErrorMessage8("Trained body parts submitted succesfully!")
 
 
             }
@@ -260,18 +260,18 @@ function Home(props) {
 
             if (response.status == 200) {
                 console.log("client info sent to server:)" + response.status);
-                if (state.running_startTime)
-                    setErrorMessage1("Info submitted succesfully!");
-                else if (state.swimming_startTime)
-                    setErrorMessage2("Info submitted succesfully!");
-                else if (state.hiit_startTime)
-                    setErrorMessage3("Info submitted succesfully!");
-                else if (state.miss_startTime)
-                    setErrorMessage4("Info submitted succesfully!");
-                else if (state.jogging_startTime)
-                    setErrorMessage5("Info submitted succesfully!");
-                else if (state.cross_startTime)
-                    setErrorMessage6("Info submitted succesfully!");
+                if (state.running_startTime && state.running_endTime)
+                    setErrorMessage1("Running session submitted succesfully!");
+                if (state.swimming_startTime && state.swimming_endTime)
+                    setErrorMessage2("Swimmimg session submitted succesfully!");
+                if (state.hiit_startTime && state.hiit_endTime)
+                    setErrorMessage3("HIIT session submitted succesfully!");
+                if (state.miss_startTime && state.miss_endTime)
+                    setErrorMessage4("MIIS session submitted succesfully!");
+                if (state.jogging_startTime && state.jogging_endTime)
+                    setErrorMessage5("Jogging session submitted succesfully!");
+                if (state.cross_startTime && state.cross_endTime)
+                    setErrorMessage6("Cross session submitted succesfully!");
 
 
             }
@@ -320,7 +320,7 @@ function Home(props) {
 
             if (response.status == 200) {
                 console.log("client info sent to server :)" + response.status);
-                setErrorMessage7("Info submitted succesfully!")
+                setErrorMessage7("Supplements intake submitted succesfully!")
 
             }
             else if (response.status == 400) {
@@ -361,7 +361,7 @@ function Home(props) {
 
             if (response.status == 200) {
                 console.log("client info sent to server:)" + response.status);
-                setErrorMessage9("Info submitted succesfully!")
+                setErrorMessage9("Nutritional intake info submitted succesfully!")
 
 
             }
@@ -515,7 +515,7 @@ function Home(props) {
                                             Submit</button>
                                     </form>
                                     <form className="cardio-form">
-                                        <p className="paraa">Insert MISS session time :
+                                        <p className="paraa">Insert MIIS session time :
                                         </p>
                                         <div className="time">
                                             start time :

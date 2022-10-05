@@ -275,7 +275,7 @@ function UserProfile(props) {
                 <div className="feild3">
                     <button
                         type="submit"
-                        className="btn btn-primary"
+                        className="bbtn"
                         onClick={handleSubmitClick}
                     >
                         Update profile

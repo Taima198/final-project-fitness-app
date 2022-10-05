@@ -8,7 +8,9 @@
   text-align: center;
   margin-bottom: 4vh;
 }
-
+.messagee:hover {
+  background-color: rgba(0, 0, 0, 0.304);
+}
 .messagee {
   background-color: transparent;
   height: 30vh;

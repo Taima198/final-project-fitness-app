@@ -3,15 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+.header-login-page {
+  font-size: 26px;
+  margin-bottom: 3vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 
 .form-login-container {
-  height: 70vh;
+  height: 75vh;
   width: 60%;
   text-align: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 1%;
   padding: 10vh;
@@ -39,14 +44,33 @@
 .form-controll {
   border: none;
   width: 20vw;
-  border-radius: 1%;
+  border-radius: 3%;
   padding: 0.5vh;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
     rgb(209, 213, 219) 0px 0px 0px 1px inset;
   /* background-color: red; */
+  /* text-align: center; */
+  /* align-items: center; */
+}
+
+.form-controll:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+
+  box-shadow: inset 0px 0px 10px 1px #fefefe;
+}
+
+.already-account-mgs {
+  font-size: 12px;
+}
+
+.positive-error {
+  color: blue;
+  font-size: 12px;
+  max-height: 20px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  min-height: 15px;
   text-align: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
 }
