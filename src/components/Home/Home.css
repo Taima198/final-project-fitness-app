@@ -1,0 +1,203 @@
+@import url("https://cdn.syncfusion.com/ej2/bootstrap5.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.paraa,
+.form-controll {
+  text-align: center;
+}
+
+.paraa {
+  margin-top: 3vh;
+}
+
+.time {
+  text-align: center;
+  padding-top: 2vh;
+}
+
+.nutrition-feild {
+  margin-top: 2vh;
+}
+.positive-error {
+  color: blue;
+}
+
+.calender-pop-up {
+  height: 50vh;
+  padding-top: 5%;
+  text-align: center;
+}
+
+/* .weights-pop-up {
+  padding-top: 3vh;
+  padding-left: 1vw;
+} */
+
+.cardio-pop-up {
+  height: 50vh;
+  overflow: scroll;
+}
+.cardio-pop-up::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cardio-pop-up {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.vit-popup,
+.weights-pop-up,
+.nut-popup {
+  padding: 3%;
+}
+.sport-con .nutrition-con {
+  width: 30vw;
+  padding: 2%;
+  border-radius: 1%;
+}
+.nutrition-con {
+  padding-top: 5vh;
+}
+
+.cardio-form {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5%;
+  width: 21vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+  height: 45vh;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.form-co {
+  border: none;
+  border-radius: 1%;
+  padding: 0.5vh;
+  margin-top: 1vh;
+  width: 16vw;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  /* background-color: red; */
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btnn {
+  margin-top: 6vh;
+  margin-bottom: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  border: none;
+  padding: 1%;
+  border-radius: 1%;
+}
+
+.btnn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btnnn {
+  margin-top: 5vh;
+  margin-bottom: 9vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 16vw;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  border: none;
+  padding: 1%;
+  border-radius: 1%;
+}
+.btnnn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  width: 200px;
+  margin-right: 1vw;
+  border-color: black;
+  box-shadow: 2px 0.7px #8888882b;
+}
+
+.split {
+  height: 92.75vh;
+  margin-top: 7.25vh;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+/* Control the left side */
+.left {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-left: 15%;
+  padding-top: 10%;
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-right: 8%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-top: 8%;
+  right: 0;
+}
+
+.DatePicker {
+  height: 50vh;
+}
+
+.outputOfTheDayFeild {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 1vh;
+  padding: 10px;
+  padding-top: 20px;
+  border-radius: 1%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  height: 400px;
+  width: 450px;
+  overflow: scroll;
+}
+
+.outputOfTheDayFeild::-webkit-scrollbar {
+  display: none;
+}
+
+.outputOfTheDayFeild {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.nutrition-supplements-feild {
+  width: 400px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.suggestions-containerr {
+  height: 40vh;
+}

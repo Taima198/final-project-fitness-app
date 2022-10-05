@@ -1,0 +1,14 @@
+.container {
+  color: white;
+  /* height: 30vh; */
+  font-size: 26px;
+  font-family: monospace;
+}
+
+.h1 {
+  padding-top: 2vh;
+}
+
+.header {
+  height: 12vh !important;
+}

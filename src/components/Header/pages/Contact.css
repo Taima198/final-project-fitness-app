@@ -1,0 +1,12 @@
+.contact-container {
+    max-height: 80vh;
+}
+
+.form-container {
+    min-height: 60vh;
+    padding: 5vh;
+    margin: 10vh 50vh auto 50vh;
+    border-radius: 5px;
+    /* box-shadow: 30px red; */
+    background-color: rgba(240, 248, 255, 0.301);
+}
