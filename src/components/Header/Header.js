@@ -59,7 +59,7 @@ function Header(props) {
         <div className="header">
           <Navbar className="navbar navbar-dark bg-dark">
             <Container fluid>
-              <Navbar.Brand as={Link} to='/home'>Fitness & Nutrition App</Navbar.Brand>
+              <Navbar.Brand as={Link} to='/welcome-page'>Fitness & Nutrition App</Navbar.Brand>
 
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
@@ -68,7 +68,9 @@ function Header(props) {
                   style={{ maxHeight: '120px' }}
                   collapse navbar-collapse
                 >
-
+                  <Nav.Link as={Link} to='/welcome-page'>
+                    {/* <BsPerson /> */}
+                  </Nav.Link>
                   <Nav.Link as={Link} to='/log-in'>Log in
                     {/* <BsPerson /> */}
                   </Nav.Link>
@@ -81,6 +83,9 @@ function Header(props) {
         </div>
         <div>
           <Switch>
+            <Route path="/welcome-page">
+              <WelcomePage />
+            </Route>
             <Route path="/home">
               <Home />
             </Route>

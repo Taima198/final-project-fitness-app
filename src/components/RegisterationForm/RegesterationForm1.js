@@ -213,7 +213,7 @@ function RegistrationForm1(props) {
     return (
         <div className="outter_card  login-card mt-2 hv-center">
             <form className="form-register-container">
-
+                <h1 className="header-login-page">Registeration Page</h1>
                 <div className="feild">
                     <p className="para">Create user name :</p>
                     <input type="text"

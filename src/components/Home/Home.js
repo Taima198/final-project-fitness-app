@@ -117,7 +117,7 @@ function Home(props) {
         protien_intake: "",
         carbs_intake: "",
         fats_intake: "",
-        suggestion: "okk",
+        suggestion: "loading data...",
         day_event: "i trained legs today"
     })
     const handleChange = (e) => {

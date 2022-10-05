@@ -1,0 +1,95 @@
+.welcome-header {
+  font-size: xx-large;
+  padding-bottom: 5%;
+}
+
+.welcome-container {
+  border-radius: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-right: 2%;
+  padding-left: 2%;
+  height: 30vh;
+  padding-top: 3%;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  z-index: x;
+  margin-top: 25vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* CSS */
+.button-46 {
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid #dfdfdf;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 28px;
+  max-width: 80%;
+  padding: 14px 22px;
+  text-decoration: none;
+  transition: all 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-46:active,
+.button-46:hover {
+  outline: 0;
+}
+
+.button-46:hover {
+  background-color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 768px) {
+  .button-46 {
+    font-size: 20px;
+    min-width: 200px;
+    padding: 14px 16px;
+  }
+}
+
+.bbtnn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 16vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  border: none;
+  border-radius: 5%;
+  height: 40px;
+  width: 200px;
+  margin-right: 1vw;
+  margin-bottom: 2vh;
+  margin-top: 18vh;
+  border-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  white-space: pre-line;
+}
+
+.bbtnn:hover {
+  background-color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.19);
+}
+
+/* .aaa {
+  margin-top: 30vh;
+} */
+
+.small-text {
+  margin-top: 1vh;
+  font-size: 14px;
+}

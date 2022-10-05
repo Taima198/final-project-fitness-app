@@ -190,6 +190,8 @@ function UserProfile(props) {
     return (
         <div className="outter_card login-card hv-center">
             <form className="form-register-container">
+                <h1 className="header-login-page">Update Profile Page</h1>
+
                 <div className="feild">
                     <p className="para">Update your user name :</p>
                     <input type="text"

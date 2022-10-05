@@ -90,6 +90,8 @@ function ContactUs(props) {
             <div className="out-card">
                 <div className="form-login-container out-cardd">
                     <form >
+
+                        <h1 className="header-login-page">Feedback Page</h1>
                         <p className="para"><br></br>We are glad to know your feedback :</p>
                         <div className="feildss">
                             <textarea placeHolder="Write your feedback here :)" id="message" className="messagee"
