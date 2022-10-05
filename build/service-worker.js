@@ -14,7 +14,11 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
+<<<<<<< HEAD
   "/Taima198/fitness-app-frontend/precache-manifest.21f00912bbf1512a52046e2414199600.js"
+=======
+  "/Taima198/fitness-app-frontend/precache-manifest.1e93b42c64f0b5f3cd1c9ae02a13690a.js"
+>>>>>>> 6e05b1f24858ab27788c5d2ff5a9650e51829804
 );
 
 workbox.clientsClaim();

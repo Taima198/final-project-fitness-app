@@ -1,5 +1,6 @@
 {
   "main.css": "/Taima198/fitness-app-frontend/static/css/main.eef67bff.chunk.css",
+<<<<<<< HEAD
   "main.js": "/Taima198/fitness-app-frontend/static/js/main.c4bbcb4d.chunk.js",
   "main.js.map": "/Taima198/fitness-app-frontend/static/js/main.c4bbcb4d.chunk.js.map",
   "runtime~main.js": "/Taima198/fitness-app-frontend/static/js/runtime~main.56171251.js",
@@ -11,6 +12,19 @@
   "static/js/3.454a742c.chunk.js.map": "/Taima198/fitness-app-frontend/static/js/3.454a742c.chunk.js.map",
   "index.html": "/Taima198/fitness-app-frontend/index.html",
   "precache-manifest.21f00912bbf1512a52046e2414199600.js": "/Taima198/fitness-app-frontend/precache-manifest.21f00912bbf1512a52046e2414199600.js",
+=======
+  "main.js": "/Taima198/fitness-app-frontend/static/js/main.232c2e08.chunk.js",
+  "main.js.map": "/Taima198/fitness-app-frontend/static/js/main.232c2e08.chunk.js.map",
+  "runtime~main.js": "/Taima198/fitness-app-frontend/static/js/runtime~main.f811c122.js",
+  "runtime~main.js.map": "/Taima198/fitness-app-frontend/static/js/runtime~main.f811c122.js.map",
+  "static/css/2.322d01e1.chunk.css": "/Taima198/fitness-app-frontend/static/css/2.322d01e1.chunk.css",
+  "static/js/2.645d853a.chunk.js": "/Taima198/fitness-app-frontend/static/js/2.645d853a.chunk.js",
+  "static/js/2.645d853a.chunk.js.map": "/Taima198/fitness-app-frontend/static/js/2.645d853a.chunk.js.map",
+  "static/js/3.baf7c14f.chunk.js": "/Taima198/fitness-app-frontend/static/js/3.baf7c14f.chunk.js",
+  "static/js/3.baf7c14f.chunk.js.map": "/Taima198/fitness-app-frontend/static/js/3.baf7c14f.chunk.js.map",
+  "index.html": "/Taima198/fitness-app-frontend/index.html",
+  "precache-manifest.1e93b42c64f0b5f3cd1c9ae02a13690a.js": "/Taima198/fitness-app-frontend/precache-manifest.1e93b42c64f0b5f3cd1c9ae02a13690a.js",
+>>>>>>> 6e05b1f24858ab27788c5d2ff5a9650e51829804
   "service-worker.js": "/Taima198/fitness-app-frontend/service-worker.js",
   "static/css/2.322d01e1.chunk.css.map": "/Taima198/fitness-app-frontend/static/css/2.322d01e1.chunk.css.map",
   "static/css/main.eef67bff.chunk.css.map": "/Taima198/fitness-app-frontend/static/css/main.eef67bff.chunk.css.map",

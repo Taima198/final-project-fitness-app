@@ -61,6 +61,10 @@
   "bugs": {
     "url": "https://github.com/Taima198/fitness-app-frontend/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/Taima198/fitness-app-frontend#readme",
   "devDependencies": {}
+=======
+  "homepage": "https://github.com/Taima198/fitness-app-frontend#readme"
+>>>>>>> 6e05b1f24858ab27788c5d2ff5a9650e51829804
 }
