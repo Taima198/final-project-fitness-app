@@ -292,7 +292,7 @@ function Home(props) {
             console.log("response:")
 
             if (response.status == 200) {
-                console.log("client info sent to server:)" + response.status);
+                console.log("client info sent to server :)" + response.status);
 
             }
             else if (response.status == 400) {
