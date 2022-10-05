@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-login-container {
+  height: 70vh;
+  width: 60%;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 1%;
+  padding: 10vh;
+  margin-top: 5vh;
+}
+
+.feild {
+  padding: 3vh;
+  background-color: rgba(0, 0, 0, 0.393);
+  width: 40vw;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+/* .login-para {
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.form-controll {
+  border: none;
+  width: 20vw;
+  border-radius: 1%;
+  padding: 0.5vh;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  /* background-color: red; */
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
