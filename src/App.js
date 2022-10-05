@@ -31,37 +31,13 @@ function App(props) {
   return (
     <Router>
       <div className="App" style={{ backgroundImage: `url(${require("../src/components/images/victor.jpg")})` }}>
-        {/* {!hideHeaderPaths.includes(pathname) && <Header />} */}
-        {/* <Outlet /> */}
         <UserContext.Provider value={{ userEmail, setUserEmail }}>
-          {/* <UserContext.Provider value={}> */}
           <Header />
-          {/* {location.pathname !== '/exclusion-path' && <Header />} */}
           <Switch>
             <div className="container d-flex align-items-center flex-column">
-              {/* <Route path='/'>
-              <Empty showError={updateErrorMessage} updateTitle={updateTitle} />
-            </Route> */}
-              {/* <Route path='/home'>
-                <Home showError={updateErrorMessage} updateTitle={updateTitle} />
-              </Route> */}
-              {/* <Route path='/register1'>
-                <RegistrationForm1 showError={updateErrorMessage} updateTitle={updateTitle} />
-              </Route>
-              <Route path='/login'>
-                <LoginForm showError={updateErrorMessage} updateTitle={updateTitle} />
-              </Route>
-              <Route path='/userProfile'>
-                <UserProfile showError={updateErrorMessage} updateTitle={updateTitle} />
-              </Route>
-              <Route path='/contactUs'>
-                <ContactUs showError={updateErrorMessage} updateTitle={updateTitle} />
-              </Route> */}
             </div>
           </Switch>
         </UserContext.Provider>
-        {/* </UserContext.Provider> */}
-
       </div>
 
     </Router>
