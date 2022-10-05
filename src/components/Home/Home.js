@@ -16,7 +16,19 @@ function Home(props) {
     const { userEmail, setUserEmail } = useContext(UserContext);
     const [loading, setLoading] = useState(false)
     console.log(" home page")
-    const [errorMessage, setErrorMessage] = React.useState("");
+    const [errorMessage1, setErrorMessage1] = React.useState("");
+    const [errorMessage2, setErrorMessage2] = React.useState("");
+    const [errorMessage3, setErrorMessage3] = React.useState("");
+    const [errorMessage4, setErrorMessage4] = React.useState("");
+    const [errorMessage5, setErrorMessage5] = React.useState("");
+    const [errorMessage6, setErrorMessage6] = React.useState("");
+    const [errorMessage7, setErrorMessage7] = React.useState("");
+    const [errorMessage8, setErrorMessage8] = React.useState("");
+    const [errorMessage9, setErrorMessage9] = React.useState("");
+    const [errorMessage10, setErrorMessage10] = React.useState("");
+    const [errorMessage11, setErrorMessage11] = React.useState("");
+    const [errorMessage12, setErrorMessage12] = React.useState("");
+
     const onChange = (date) => {
         console.log(date.toString());
 
@@ -200,6 +212,8 @@ function Home(props) {
 
             if (response.status == 200) {
                 console.log("client info sent to server:)" + response.status);
+                setErrorMessage8("Info already submitted succesfully!")
+
 
             }
             else if (response.status == 400) {
@@ -246,6 +260,19 @@ function Home(props) {
 
             if (response.status == 200) {
                 console.log("client info sent to server:)" + response.status);
+                if (state.running_startTime)
+                    setErrorMessage1("Info submitted succesfully!");
+                else if (state.swimming_startTime)
+                    setErrorMessage2("Info submitted succesfully!");
+                else if (state.hiit_startTime)
+                    setErrorMessage3("Info submitted succesfully!");
+                else if (state.miss_startTime)
+                    setErrorMessage4("Info submitted succesfully!");
+                else if (state.jogging_startTime)
+                    setErrorMessage5("Info submitted succesfully!");
+                else if (state.cross_startTime)
+                    setErrorMessage6("Info submitted succesfully!");
+
 
             }
             else if (response.status == 400) {
@@ -293,6 +320,7 @@ function Home(props) {
 
             if (response.status == 200) {
                 console.log("client info sent to server :)" + response.status);
+                setErrorMessage7("Info submitted succesfully!")
 
             }
             else if (response.status == 400) {
@@ -333,6 +361,8 @@ function Home(props) {
 
             if (response.status == 200) {
                 console.log("client info sent to server:)" + response.status);
+                setErrorMessage9("Info submitted succesfully!")
+
 
             }
             else if (response.status == 400) {
@@ -359,8 +389,9 @@ function Home(props) {
                     <div className="calender-pop-up">
                         <p>Sports:</p>
                         <div className="sport-con">
-                            <Popup trigger={<button className="btn">Weights Training</button>} modal nested>
+                            <Popup trigger={<button className="bbtn">Weights Training</button>} modal nested>
                                 <div className="weights-pop-up">
+                                    <p>What body parts have you trained today?</p>
                                     <input id="chest" value={state.chest} onChange={handleCheckboxChange3} type="checkbox" />
                                     <label for="chest"> Chest</label><br></br>
                                     <input id="back" value={state.back} onChange={handleCheckboxChange3} type="checkbox" />
@@ -377,13 +408,14 @@ function Home(props) {
                                     <label for="triceps"> triceps</label><br></br>
                                     <input id="biceps" value={state.biceps} onChange={handleCheckboxChange3} type="checkbox" />
                                     <label for="biceps"> Biceps</label><br></br>
+
                                     <button type="submit" onClick={handleSubmitClick_weightTraining} className="btnn">Submit</button>
                                     <div className="positive-error">
-                                        {errorMessage && <div className="error"> {errorMessage} </div>}
+                                        {errorMessage8 && <div className="error"> {errorMessage8} </div>}
                                     </div>
                                 </div>
                             </Popup>
-                            <Popup trigger={<button className="btn">Cardio</button>} modal nested>
+                            <Popup trigger={<button className="bbtn">Cardio</button>} modal nested>
                                 <div className="cardio-pop-up">
                                     <form className="cardio-form">
                                         <p className="paraa">Insert running session time :</p>
@@ -407,11 +439,15 @@ function Home(props) {
                                                 value={state.running_endTime}
                                                 onChange={handleChange}
                                             /></div>
+                                        <div className="positive-error">
+                                            {errorMessage1 && <div className="error"> {errorMessage1} </div>}
+                                        </div>
                                         <button className="btnnn"
                                             type="submit"
                                             onClick={handleSubmitClick_cardio}>
                                             Submit
                                         </button>
+
                                     </form>
 
                                     <form className="cardio-form">
@@ -436,6 +472,9 @@ function Home(props) {
                                                 value={state.swimming_endTime}
                                                 onChange={handleChange}
                                             />
+                                        </div>
+                                        <div className="positive-error">
+                                            {errorMessage2 && <div className="error"> {errorMessage2} </div>}
                                         </div>
                                         <button className="btnnn"
                                             type="submit"
@@ -467,6 +506,9 @@ function Home(props) {
                                                 onChange={handleChange}
                                             />
                                         </div>
+                                        <div className="positive-error">
+                                            {errorMessage3 && <div className="error"> {errorMessage3} </div>}
+                                        </div>
                                         <button className="btnnn"
                                             type="submit"
                                             onClick={handleSubmitClick_cardio}>
@@ -497,6 +539,9 @@ function Home(props) {
                                                 onChange={handleChange}
                                             />
                                         </div>
+                                        <div className="positive-error">
+                                            {errorMessage4 && <div className="error"> {errorMessage4} </div>}
+                                        </div>
                                         <button className="btnnn"
                                             type="submit"
                                             onClick={handleSubmitClick_cardio}>
@@ -525,6 +570,9 @@ function Home(props) {
                                                 value={state.jogging_endTime}
                                                 onChange={handleChange}
                                             /> </div>
+                                        <div className="positive-error">
+                                            {errorMessage5 && <div className="error"> {errorMessage5} </div>}
+                                        </div>
                                         <button className="btnnn"
                                             type="submit"
                                             onClick={handleSubmitClick_cardio}>
@@ -555,6 +603,9 @@ function Home(props) {
                                                 onChange={handleChange}
                                             />
                                         </div>
+                                        <div className="positive-error">
+                                            {errorMessage6 && <div className="error"> {errorMessage6} </div>}
+                                        </div>
                                         <button className="btnnn"
                                             type="submit"
                                             onClick={handleSubmitClick_cardio}>
@@ -568,9 +619,9 @@ function Home(props) {
                         <br></br>
                         <div className="nutrition-con">
                             <p className="nutrition-feild" >Nutrition:    </p>
-                            <Popup trigger={<button className="btn">Supplements</button>} modal nested>
+                            <Popup trigger={<button className="bbtn">Supplements</button>} modal nested>
                                 <div className="vit-popup">
-                                    <p>Supplements:</p>
+                                    <p>Whitch supplements have you took today?</p>
                                     <input id="iron-2" value={state.iron_2} onChange={handleCheckboxChange2} type="checkbox" />
                                     <label for="iron-2"> Iron</label><br></br>
                                     <input id="vitC-2" value={state.vitC_2} onChange={handleCheckboxChange2} type="checkbox" />
@@ -587,13 +638,17 @@ function Home(props) {
                                     <label for="potasium-2"> Potasium</label><br></br>
                                     <input id="magnisum-2" value={state.magnisum_2} onChange={handleCheckboxChange2} type="checkbox" />
                                     <label for="magnisum-2"> Magnisum</label><br></br>
+
                                     <button className="btnn"
                                         type="submit"
                                         onClick={handleSubmitClick_supplements}>
                                         Submit</button>
+                                    <div className="positive-error">
+                                        {errorMessage7 && <div className="error"> {errorMessage7} </div>}
+                                    </div>
                                 </div>
                             </Popup>
-                            <Popup trigger={<button className="btn">Nutrition</button>} modal nested>
+                            <Popup trigger={<button className="bbtn">Nutrition</button>} modal nested>
                                 <div className="nut-popup">
                                     <p>Submit your nutritional benefits per day:</p>
                                     <div>
@@ -623,9 +678,13 @@ function Home(props) {
                                             value={state.fats_intake}
                                             onChange={handleChange} />
                                     </div>
+
                                     <button className="btnn"
                                         type="submit"
                                         onClick={handleSubmitClick_nutrition}>Submit</button>
+                                </div>
+                                <div className="positive-error">
+                                    {errorMessage9 && <div className="error"> {errorMessage9} </div>}
                                 </div>
                             </Popup>
                         </div>

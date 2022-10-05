@@ -24,6 +24,12 @@
 }
 .positive-error {
   color: blue;
+  font-size: 12px;
+  max-height: 15px;
+  padding-top: 5px;
+  min-height: 15px;
+  text-align: center;
+  align-items: center;
 }
 
 .calender-pop-up {
@@ -66,24 +72,31 @@
 }
 
 .cardio-form {
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 5%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2%;
   width: 21vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3vh;
-  height: 45vh;
+  height: 46vh;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
     rgb(209, 213, 219) 0px 0px 0px 1px inset;
 }
 
+.cardio-form:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 2px inset;
+}
+
 .form-co {
   border: none;
-  border-radius: 1%;
+  border-radius: 3%;
   padding: 0.5vh;
   margin-top: 1vh;
   width: 16vw;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.4);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
     rgb(209, 213, 219) 0px 0px 0px 1px inset;
   /* background-color: red; */
@@ -92,13 +105,20 @@
   margin-left: auto;
   margin-right: auto;
 }
+.form-co:hover {
+  background-color: rgba(255, 254, 254, 0.9);
+  border-radius: 3%;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1.5px inset;
+}
+
 .btnn {
   margin-top: 6vh;
   margin-bottom: 2vh;
   margin-left: auto;
   margin-right: auto;
   width: 150px;
-  background-color: transparent;
+  background-color: rgba(179, 11, 11, 0.153);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
     rgb(209, 213, 219) 0px 0px 0px 1px inset;
   border: none;
@@ -107,7 +127,7 @@
 }
 
 .btnn:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(179, 11, 11, 0.247);
 }
 
 .btnnn {
@@ -115,23 +135,43 @@
   margin-bottom: 9vh;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 16vw;
-  background-color: transparent;
+  background-color: rgba(179, 11, 11, 0.153);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
     rgb(209, 213, 219) 0px 0px 0px 1px inset;
   border: none;
   padding: 1%;
   border-radius: 1%;
+  height: 40px;
 }
 .btnnn:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(179, 11, 11, 0.247);
 }
 
-.btn {
+.bbtn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 16vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  border: none;
+  padding: 1%;
+  border-radius: 5%;
+  height: 40px;
   width: 200px;
   margin-right: 1vw;
   border-color: black;
-  box-shadow: 2px 0.7px #8888882b;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  /* box-shadow: 2px 0.7px #8888882b; */
+}
+
+.bbtn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .split {
