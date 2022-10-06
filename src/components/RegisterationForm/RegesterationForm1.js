@@ -274,7 +274,7 @@ function RegistrationForm1(props) {
                     <p className="para">Select your gender :</p>
                     <select value={selectedGender} onChange={handleChangeSelect} id="gender" className="gender">
                         {genderOptions.map(option => (
-                            <option key={option.value} value={option.value}>
+                            <option className="optionss" key={option.value} value={option.value}>
                                 {option.text}
                             </option>
                         ))}

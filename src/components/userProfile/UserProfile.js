@@ -123,14 +123,16 @@ function UserProfile(props) {
 
 
         try {
-            const response = await axios.post(`http://localhost:8080/client/addRegForm
+            const response = await axios.post(`http://localhost:8080/client/update-client-profile
             `, payload)
             console.log("response::" + response.status)
 
             if (response.status == 200) {
                 console.log("updated successfully:)")
-                setUserEmail(state.email)
-                alert("wohoooooo");
+                //setUserEmail(state.email)
+                //console.log("email:::::" + state.email)
+                redirectToHome();
+                //alert("wohoooooo");
             }
             else if (response.status == 500) {
                 console.log("not update ...")
